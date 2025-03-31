@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +5,12 @@
     transition: all 0.3s ease-in-out;
 }
 
-/* Body and Font */
 body {
     font-family: 'Orbitron', sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
-/* Header */
 header {
     background-color: #1a1a1a;
     color: white;
@@ -72,7 +69,6 @@ header {
     transform: scale(1.1);
 }
 
-/* Hero Section */
 #hero {
     position: relative;
     height: 100vh;
@@ -86,39 +82,36 @@ header {
     animation: heroAnimation 1.5s ease-in-out;
 }
 
-/* Video Background */
 .video-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -2; /* Make sure the video stays behind the overlay */
+    z-index: -2; 
 }
 
 video {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    opacity: 0.6; /* Slight transparency for text readability */
+    opacity: 0.6; 
 }
 
-/* Overlay on Video */
 .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-    z-index: -1; /* Make sure the overlay stays above the video but below the text */
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
 }
 
-/* Hero Content */
 .hero-content {
-    z-index: 1; /* Ensure it stays above the overlay */
+    z-index: 1; 
     color: white;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Text shadow for better readability */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); 
     animation: slideInFromBottom 1.2s ease-out;
 }
 
@@ -153,7 +146,6 @@ video {
     animation: pulse 1s ease-in-out infinite;
 }
 
-/* About Section */
 #about {
     background-color: #f4f4f4;
     padding: 60px 20px;
@@ -172,7 +164,6 @@ video {
     animation: fadeInUp 1.5s ease-in-out;
 }
 
-/* Speakers Section */
 #speakers {
     background-color: #333;
     padding: 60px 20px;
@@ -219,7 +210,6 @@ video {
     transform: scale(1.05);
 }
 
-/* Schedule Section */
 #schedule {
     background-color: #1a1a1a;
     padding: 60px 20px;
@@ -255,36 +245,34 @@ video {
     font-size: 1.2rem;
 }
 
-/* Venue Section */
 #venue {
     background-color: #f4f4f4;
     padding: 60px 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
-    height: 100vh; /* Ensure the section has a height */
+    height: 100vh; 
 }
 
 .venue-content {
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    position: relative; /* Change to relative for proper alignment */
+    width: 100%; 
+    height: 100%; 
+    position: relative;
 }
 
 .venue-content img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire area */
-    display: block; /* Remove inline spacing */
+    object-fit: cover; 
+    display: block; 
 }
 
 #venue p {
     font-size: 1.2rem;
     margin-top: 20px;
-    color: #333; /* Ensure text is visible */
+    color: #333;
 }
 
-/* Register Now Button */
 .cta-button {
     background-color: #ff6b6b;
     color: white;
@@ -297,17 +285,15 @@ video {
     border-radius: 5px;
     transition: all 0.3s ease;
     margin-top: 20px;
-    box-shadow: 0 8px 16px rgba(255, 107, 107, 0.6); /* Button shadow */
+    box-shadow: 0 8px 16px rgba(255, 107, 107, 0.6); 
 }
 
-/* Hover Effect */
 .cta-button:hover {
     background-color: #ff3d3d;
     transform: scale(1.1);
     animation: pulse 1s ease-in-out infinite;
 }
 
-/* Registration Form */
 #registration {
     background-color: #f4f4f4;
     padding: 60px 20px;
@@ -349,7 +335,6 @@ video {
     transform: scale(1.1);
 }
 
-/* Footer Section */
 footer {
     background-color: #1a1a1a;
     color: white;
@@ -375,7 +360,6 @@ footer .social-links a:hover {
     color: #ff6b6b;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .navbar nav ul {
         flex-direction: column;
@@ -400,9 +384,7 @@ footer .social-links a:hover {
 }
 
 
-/* Keyframe Animations */
 
-/* Fade In */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -412,7 +394,6 @@ footer .social-links a:hover {
     }
 }
 
-/* Fade In Up */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -424,7 +405,6 @@ footer .social-links a:hover {
     }
 }
 
-/* Fade In Down */
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -436,7 +416,6 @@ footer .social-links a:hover {
     }
 }
 
-/* Slide In from Left */
 @keyframes slideInFromLeft {
     from {
         opacity: 0;
@@ -448,7 +427,6 @@ footer .social-links a:hover {
     }
 }
 
-/* Slide In from Right */
 @keyframes slideInFromRight {
     from {
         opacity: 0;
@@ -460,7 +438,6 @@ footer .social-links a:hover {
     }
 }
 
-/* Slide In from Bottom */
 @keyframes slideInFromBottom {
     from {
         opacity: 0;
@@ -472,7 +449,6 @@ footer .social-links a:hover {
     }
 }
 
-/* Bounce In */
 @keyframes bounceIn {
     0% {
         opacity: 0;
@@ -488,7 +464,6 @@ footer .social-links a:hover {
     }
 }
 
-/* Zoom In */
 @keyframes zoomIn {
     from {
         opacity: 0;
@@ -500,7 +475,6 @@ footer .social-links a:hover {
     }
 }
 
-/* Flip In */
 @keyframes flipIn {
     0% {
         opacity: 0;
@@ -512,7 +486,6 @@ footer .social-links a:hover {
     }
 }
 
-/* Pulse */
 @keyframes pulse {
     0% {
         transform: scale(1);
