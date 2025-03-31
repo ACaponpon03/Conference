@@ -295,18 +295,29 @@ video {
 }
 
 #registration {
-    background-color: #f4f4f4;
+    background-color: #1a1a1a;
     padding: 60px 20px;
     text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+#registration h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    animation: fadeInFromLeft 1.2s ease-in-out;
 }
 
 #registration form {
     max-width: 500px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #444;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    animation: zoomIn 1.5s ease-out;
 }
 
 #registration input {
@@ -316,6 +327,12 @@ video {
     border-radius: 4px;
     border: 1px solid #ddd;
     font-size: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+#registration input::placeholder {
+    color: #bbb;
 }
 
 #registration button {
@@ -328,12 +345,15 @@ video {
     display: inline-block;
     border-radius: 5px;
     transition: all 0.3s ease;
+    animation: fadeIn 2s ease-in-out 0.5s;
 }
 
 #registration button:hover {
     background-color: #ff3d3d;
     transform: scale(1.1);
+    animation: pulse 1s ease-in-out infinite;
 }
+
 
 footer {
     background-color: #1a1a1a;
